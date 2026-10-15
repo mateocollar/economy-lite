@@ -1,0 +1,5 @@
+api: "1.0.1"
+name: EconomyLite
+author: mateocollar
+version: "1.0"
+main: src/main.lua
