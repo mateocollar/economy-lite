@@ -41,3 +41,4 @@ luac.out
 
 # CurseStone specific
 definition/
+.luarc.json
