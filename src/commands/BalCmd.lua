@@ -9,7 +9,7 @@ function M.register(cfg)
 	}, function (sender, args)
 
 		if sender.isConsole then
-			commands.reply(sender, "Este comando debe usarse dentro del juego.")
+			commands.reply(sender, pf.colorize("&cEste comando debe usarse dentro del juego."))
 			return
 		end
 
