@@ -32,8 +32,10 @@ function pluginTable.onDisable()
 end
 
 -- TODO: Move to a different file
-events.on("PlayerJoin", function(player)
-	local _ = economy.getBalance(player.name, configMgr.initial_balance)
+events.on("PlayerJoin", function(e)
+	local cfg = configMgr.load()
+	local _ = economy.getBalance(e.player, cfg.initial_balance)
+	player.giveItem(e.player, 58, 1)
 end)
 
 return pluginTable
