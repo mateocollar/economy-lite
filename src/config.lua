@@ -11,7 +11,11 @@ function M.load ()
     cfg = {
       currency = "$",
       initial_balance = 100,
-      max_balance = 1000000
+      max_balance = 1000000,
+      blocks = {
+        [56] = 50,
+        [14] = 20
+      }
     }
     data.saveYml("config.yml", cfg)
   end
