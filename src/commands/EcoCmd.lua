@@ -10,10 +10,10 @@ function M.register (cfg)
 	}, function (sender, args)
 
 		-- Asumo que la API maneja los permisos en y de los comandos.
-		-- (Veasé: https://docs-cursestone.readthedocs.io/en/latest/plugins-es.html#permisos)
-		-- en caso de que **NO** se manejen los permisos automaticamente, puedes
-		-- hacerlo manual:
-			if not sender.isOp then -- o player.hasPermission(sender, "yourNode")
+		-- (Véase: https://docs-cursestone.readthedocs.io/en/latest/plugins-es.html#permisos)
+
+			-- gestión manual
+			if not sender.isOp then
 				commands.reply(sender, p.colorize("&c¡No tienes permiso para usar este comando!"))
 				return
 			end
