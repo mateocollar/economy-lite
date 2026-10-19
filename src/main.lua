@@ -23,7 +23,7 @@ function pluginTable.onDisable()
 end
 
 events.on("PlayerJoin", function(player)
-	local _ = economy.getBalance(player.name, cfg.initial_balance)
+	local _ = economy.getBalance(player.name, configMgr.initial_balance)
 end)
 
 return pluginTable
